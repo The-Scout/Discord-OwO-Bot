@@ -42,7 +42,7 @@ module.exports = new CommandInterface({
 			emote = emotes[emote.alt];
 		let text = emote.msg[Math.floor(Math.random()*emote.msg.length)];
 		text = text.replace(/\?/,p.msg.author.username);
-		weeb.grab(p,emote.name,"gif",text);
+		weeb.grab(p,emote.name,"gif");
 	}
 
 })

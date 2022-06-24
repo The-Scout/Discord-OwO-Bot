@@ -61,7 +61,7 @@ module.exports = new CommandInterface({
 		let text = emote.msg[Math.floor(Math.random()*emote.msg.length)];
 		text = text.replace(/\?/,msg.author.username);
 		text = text.replace(/\?/,target.username);
-		weeb.grab(p,emote.name,"gif",text);
+		weeb.grab(p,emote.name,"gif");
 		p.quest("emoteTo");
 		p.quest("emoteBy",1,target);
 	}
